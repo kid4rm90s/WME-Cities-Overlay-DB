@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME Cities Overlay DB
 // @namespace    https://greasyfork.org/en/users/166843-wazedev
-// @version      2025.08.18.01
+// @version      2025.08.18.02
 // @description  IndexedDB interface for Cities overlay
 // @author       WazeDev
 // @include      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/?.*$/
