@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME Cities Overlay DB
 // @namespace    https://greasyfork.org/en/users/166843-wazedev
-// @version      2025.08.18.02
+// @version      2026.05.17.01
 // @description  IndexedDB interface for Cities overlay
 // @author       WazeDev
 // @include      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor\/?.*$/
@@ -36,7 +36,11 @@
                   // CA
                   if(!openreq.result.objectStoreNames.contains("CA_states_cities")) {
                        openreq.result.createObjectStore("CA_states_cities", { keyPath: "state" });
-                  }
+          }
+      // NP
+      if(!openreq.result.objectStoreNames.contains("NP_states_cities")) {
+            openreq.result.createObjectStore("NP_states_cities", { keyPath: "state" });
+      }
         };
 
         openreq.onsuccess = function() {
